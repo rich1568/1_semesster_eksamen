@@ -1,0 +1,765 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+/*--Content Trigrams--*/
+
+#top_keon {
+    height: 60px;
+    width: 60px;
+    margin: 50px;
+    background-image: url(img/korean_trigrams/black/keon_rot.png);
+    background-position: center;
+    background-size: cover;
+
+    align-self: center;
+}
+
+#top_tae {
+    height: 60px;
+    width: 60px;
+    margin: 50px;
+    background-image: url(img/korean_trigrams/black/tae_rot.png);
+    background-position: center;
+    background-size: cover;
+
+    align-self: center;
+}
+
+#top_ree {
+    height: 60px;
+    width: 60px;
+    margin: 50px;
+    background-image: url(img/korean_trigrams/black/ree_rot.png);
+    background-position: center;
+    background-size: cover;
+
+    align-self: center;
+}
+
+#top_jin {
+    height: 60px;
+    width: 60px;
+    margin: 50px;
+    background-image: url(img/korean_trigrams/black/jin_rot.png);
+    background-position: center;
+    background-size: cover;
+
+    align-self: center;
+}
+
+#top_son {
+    height: 60px;
+    width: 60px;
+    margin: 50px;
+    background-image: url(img/korean_trigrams/black/son_rot.png);
+    background-position: center;
+    background-size: cover;
+
+    align-self: center;
+}
+
+#top_kam {
+    height: 60px;
+    width: 60px;
+    margin: 50px;
+    background-image: url(img/korean_trigrams/black/kam_rot.png);
+    background-position: center;
+    background-size: cover;
+
+    align-self: center;
+}
+
+/*--Navigation--*/
+
+#home_btn {
+    margin: 5px;
+    align-self: flex-start;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: #3B3B3B;
+    position: fixed;
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nav_bar {
+    margin-top: -5px;
+    height: 60px;
+    background-color: #3B3B3B;
+
+    flex-basis: auto;
+    flex-grow: 1;
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#nav_bar li {
+    list-style: none;
+    margin: 10px;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+#nav_bar a {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+}
+
+#nav_bar a:hover {
+    animation: hoverMouse ease 3s;
+}
+
+@keyframes hoverMouse {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*--Splash--*/
+
+#splash {
+    height: 500px;
+    width: 100%;
+    background-image: url(img/belt_splash.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#splash_banner {
+    height: 350px;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.4);
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#splash_txt {
+    height: 4vw;
+    background-image: url(img/name_ban.svg);
+    background-position: center;
+    background-size: cover;
+
+    flex-basis: 80vw;
+    align-self: center;
+}
+
+/*--Different sections--*/
+
+#projects {
+    height: auto;
+    width: 100%;
+
+    align-self: flex-start;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#my_proj {
+    height: auto;
+    width: 100%;
+
+    align-self: flex-start;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#my_info {
+    height: auto;
+    width: 100%;
+
+    align-self: flex-start;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*--Sections main--*/
+
+.img_link {
+    height: 300px;
+    width: 455px;
+    position: relative;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img_txt {
+    align-self: center;
+}
+
+.clk_here {
+    height: 30px;
+    width: 455px;
+    background-color: rgb(92, 92, 92, 0.6);
+
+    align-self: center;
+}
+
+.clk_here h3 {
+    color: white;
+    margin-top: -5px;
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+#b_cont {
+    height: 300px;
+    width: 455px;
+    background-image: url(img/basic_content/b_content.jpg);
+    background-size: cover;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#b_ux {
+    height: 300px;
+    width: 455px;
+    background-image: url(img/basic_ux/ux_first.png);
+    background-size: cover;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#vid_cont {
+    height: 300px;
+    width: 455px;
+    background-image: url(img/video_proj/v_proj.jpg);
+    background-size: cover;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#pic_cont {
+    height: 300px;
+    width: 455px;
+    background-image: url(img/image_proj/img_proj1.jpg);
+    background-size: cover;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#cv_cont {
+    height: 300px;
+    width: 455px;
+    background-image: url(img/about_cv/mili_baret.jpg);
+    background-size: cover;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#om_cont {
+    height: 300px;
+    width: 455px;
+    background-image: url(img/about_cv/sort_baelt.jpg);
+    background-size: cover;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.img_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(92, 92, 92, 0.6);
+    overflow: hidden;
+    width: 455px;
+    height: 0;
+    transition: .5s ease;
+
+    Display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img_link:hover .img_overlay {
+    height: 300px;
+}
+
+.brk_line {
+    height: 0.5vw;
+    margin-top: 4vw;
+    background-color: #3B3B3B;
+
+    flex-basis: 80%;
+    align-self: center;
+}
+
+.brk_txt {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    flex-basis: 80%;
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inner_txt {
+    padding: 10px 50px 10px 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inner_txt h3 {
+    margin-left: -10px
+}
+
+.sectionwrapper {
+    height: auto;
+    width: 100%;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    height: auto;
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #EBEBEB;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cont_left {
+    height: auto;
+    width: 455px;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner_left {
+    height: 800px;
+    width: 455px;
+    background-color: white;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cont_right {
+    height: auto;
+    width: 455px;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner_right {
+    height: 800px;
+    width: 455px;
+    background-color: white;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*--Footer--*/
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #3B3B3B;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#foot_info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#foot_info li {
+    color: white;
+    list-style: none;
+}
+
+#foot_info a {
+    color: white;
+}
+
+
+/*--content.html--*/
+
+.cont_info {
+    height: auto;
+    width: 80%;
+
+    flex-basis: 80%;
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info_left {
+    height: 700px;
+    width: 455px;
+    background-color: white;
+
+    align-self: center;
+    align-items: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info_right {
+    height: 700px;
+    width: 455px;
+    background-color: white;
+
+    align-self: center;
+    align-items: flex-start;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info_right video {
+    margin-top: 50px;
+    align-self: center;
+}
+
+.info_right img {
+    margin-top: 50px;
+    align-self: center;
+}
+
+.info_right p {
+    padding: 10px 50px 0px 50px;
+}
+
+.info_right ul {
+    padding: 10px 50px 0px 50px;
+}
+
+.info_right li {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 400;
+    list-style: none;
+}
+
+.info_right li p {
+    padding: 0px;
+}
+
+#proj_logo {
+    width: 300px;
+    height: 300px;
+    margin: 0px 50px 0px 50px;
+    background-image: url(img/basic_content/logo.png);
+    background-position: center;
+    background-size: cover;
+
+    align-self: center;
+}
+
+#proj_txt p {
+    font-weight: 700;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#ux_logo {
+    width: 300px;
+    height: 300px;
+    margin: 0px 50px 0px 50px;
+    background-image: url(img/basic_ux/TL_logo.png);
+    background-position: center;
+    background-size: cover;
+
+    align-self: center;
+}
+
+/*--CV--*/
+
+.cv_info {
+    height: auto;
+    width: 80%;
+
+    flex-basis: 80%;
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cv_left {
+    height: auto;
+    width: 450px;
+    background-color: white;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+
+    align-self: flex-start;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cv_left li {
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style: none;
+}
+
+.cv_left h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cv_right {
+    height: auto;
+    width: 450px;
+    background-color: white;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+
+    align-self: flex-start;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cv_right li {
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style: none;
+}
+
+.cv_right h3 {
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+/*--Om mig--*/
+.om_info {
+    height: auto;
+    width: 800px;
+    background-color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.om_left {
+    height: 400px;
+    width: 380px;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.om_right {
+    height: 400px;
+    width: 380px;
+
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#om_pic {
+    height: 300px;
+    width: 300px;
+    background-image: url(img/about_cv/profile.jpg);
+    background-position: center;
+    background-size: cover;
+
+    align-self: center;
+
+    border-radius: 100%;
+}
+
+.om_right p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
